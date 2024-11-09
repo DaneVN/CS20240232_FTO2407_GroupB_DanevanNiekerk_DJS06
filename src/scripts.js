@@ -1,4 +1,12 @@
-import {} from "../exercises.js";
+import {
+  logProducts,
+  uppercaseProvinces,
+  calcNameLength,
+  sortAphabet,
+  removeFilterCount,
+  findChar,
+  arraysToSingleObject,
+} from "../exercises.js";
 // A list of provinces:
 const provinces = [
   "Western Cape",
@@ -31,15 +39,16 @@ const products = [
 
 // Exercises
 console.log("CHALLENGE 1");
-
+logProducts(products);
 console.log("CHALLENGE 2");
-
+uppercaseProvinces(provinces);
 console.log("CHALLENGE 3");
-
+calcNameLength(names);
 console.log("CHALLENGE 4");
-
+sortAphabet(provinces);
 console.log("CHALLENGE 5");
-
+removeFilterCount(provinces, "Cape");
 console.log("CHALLENGE 6");
-
+findChar(names, "S");
 console.log("CHALLENGE 7");
+arraysToSingleObject(names, provinces);
