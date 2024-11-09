@@ -7,6 +7,15 @@ import {
   findChar,
   arraysToSingleObject,
 } from "../exercises.js";
+import {
+  concatArray,
+  filterByNameLength,
+  findExtremePrices,
+  logProductName,
+  objectKeyTransformation,
+  priceManipulation,
+} from "../advancedExercises.js";
+
 // A list of provinces:
 const provinces = [
   "Western Cape",
@@ -52,3 +61,18 @@ console.log("CHALLENGE 6");
 findChar(names, "S");
 console.log("CHALLENGE 7");
 arraysToSingleObject(names, provinces);
+
+//Advanced Exercises (Single console.log Execution)
+
+console.log("CHALLENGE(Advance) 1");
+logProductName(products);
+console.log("CHALLENGE(Advance) 2");
+filterByNameLength(names);
+console.log("CHALLENGE(Advance) 3");
+priceManipulation(products);
+console.log("CHALLENGE(Advance) 4");
+concatArray(products);
+console.log("CHALLENGE(Advance) 5");
+findExtremePrices(products);
+console.log("CHALLENGE(Advance) 6");
+objectKeyTransformation(products);
