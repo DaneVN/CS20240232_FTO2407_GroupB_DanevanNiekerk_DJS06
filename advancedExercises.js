@@ -62,5 +62,13 @@ export const findExtremePrices = (products) => {
 
 //Object Transformation:
 export const objectKeyTransformation = (products) => {
-  console.log(Object.entries(products));
+  console.log(
+    Object.entries(products).reduce((acc, curr) => {
+      acc.push({
+        name: curr[0],
+        cost: curr[1].price,
+      });
+      return acc;
+    }, [])
+  );
 };
